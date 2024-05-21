@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../OneDrive/Documents/social-links-profile-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "frontendMentor-social-links-profile"
+	}
+}

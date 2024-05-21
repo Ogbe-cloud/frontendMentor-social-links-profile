@@ -1,0 +1,106 @@
+body {
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.profile {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px;
+    background-color: hsl(0, 0%, 12%);
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.profile img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin: 8px;
+    height: auto;
+}
+
+h1 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    font-weight: 600;
+    color: hsl(75, 94%, 57%);
+}
+
+p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.profile-links {
+    width: 100%;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-links div {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 6px;
+    margin: 10px 0;
+    padding: 8px;
+    background-color: hsl(0, 0%, 20%);
+    transition: background-color 0.3s;
+}
+
+.profile-links div a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+    text-align: center;
+}
+
+.profile-links div:hover {
+    background-color: hsl(75, 94%, 57%);
+    cursor: pointer;
+}
+
+.profile-links div:hover a {
+    color: hsl(0, 0%, 12%);
+}
+
+@media (min-width: 600px) {
+    .profile {
+        padding: 30px;
+    }
+
+    .profile-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profile-links div {
+        margin: 10px;
+        flex: 1 1 calc(50% - 20px);
+        max-width: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .profile {
+        padding: 40px;
+    }
+
+    .profile-links div {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+}
